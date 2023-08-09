@@ -11,6 +11,8 @@ import { removeHtmlExtensionPlugin } from 'vuepress-plugin-remove-html-extension
 import { feedPlugin } from "vuepress-plugin-feed2";
 import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
 import { externalLinkIconPlugin } from "@vuepress/plugin-external-link-icon";
+import { commentPlugin } from "vuepress-plugin-comment2";
+import { iconifyPlugin } from 'vuepress-plugin-iconify'
 
 
 export default defineUserConfig({
@@ -22,6 +24,14 @@ export default defineUserConfig({
 
   theme,
   plugins: [
+    iconifyPlugin(),
+    commentPlugin({
+      // 插件选项
+      repo: "machaojin1917939763/machaojin1917939763.github.io",
+      repoId: "R_kgDOKFJsOg",
+      category: "Announcements",
+     categoryId: "DIC_kwDOKFJsOs4CYe_S",
+    }),
     externalLinkIconPlugin({
       // 配置项
     }),

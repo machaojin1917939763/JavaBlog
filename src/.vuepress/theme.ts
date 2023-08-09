@@ -12,7 +12,17 @@ export default hopeTheme({
   },
   fullscreen:true,
 
-  iconAssets: "fontawesome-with-brands",
+  // iconAssets: "fontawesome-with-brands",
+  // iconAssets: "fontawesome",
+  // // 你想要的 URL
+  // iconAssets: "/base/my/font-icon/resource.js",
+
+  // 上述内容的数组
+  iconAssets: [
+    "/base/my/font-icon/resource.js",
+    "https://example/my/fonr-icon/resouce.css",
+    "fontawesome",
+  ],
 
   logo: "/navicon/jeeweixin.ico",
 

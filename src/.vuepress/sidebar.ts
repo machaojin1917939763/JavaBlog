@@ -18,6 +18,5 @@ export default sidebar({
       collapsible:true,
       children: "structure",
     },
-    "slides",
   ],
 });
