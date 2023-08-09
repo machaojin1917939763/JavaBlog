@@ -13,7 +13,7 @@ actions:
   - text: 技术文档
     link: ./guide/
   - text: 个人博客
-    link: https://machaojin.cn
+    link: http://120.48.18.228/
 
 ---
 
