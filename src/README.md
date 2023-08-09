@@ -1,7 +1,7 @@
 ---
 home: true
 icon: home
-title: 项目主页
+title: Pass
 bgImageStyle:
 heroImage: /blog_head_logo.gif
 heroText: 学习笔记
@@ -13,7 +13,7 @@ actions:
   - text: 技术文档
     link: ./guide/
   - text: 个人博客
-    link: http://120.48.18.228/
+    link: http://120.48.18.228:8090/
 
 ---
 
