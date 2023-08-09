@@ -18,17 +18,19 @@ export default hopeTheme({
   // iconAssets: "/base/my/font-icon/resource.js",
 
   // 上述内容的数组
-  iconAssets: [
-    "/base/my/font-icon/resource.js",
-    "https://example/my/fonr-icon/resouce.css",
-    "fontawesome",
-  ],
-
+  // iconAssets: [
+  //   "/base/my/font-icon/resource.js",
+  //   "https://example/my/fonr-icon/resouce.css",
+  //   "fontawesome",
+  // ],
+  iconPrefix:"",
+  print:true,
   logo: "/navicon/jeeweixin.ico",
 
   repo: "machaojin1917939763/JavaBlog",
 
   docsDir: "src",
+  headerDepth:3,
   
 
   // navbar
