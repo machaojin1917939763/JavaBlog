@@ -23,8 +23,8 @@ export default hopeTheme({
   //   "https://example/my/fonr-icon/resouce.css",
   //   "fontawesome",
   // ],
-  iconPrefix:"",
-  print:true,
+  iconAssets: "fontawesome-with-brands",
+  // iconPrefix:"",
   logo: "/navicon/jeeweixin.ico",
 
   repo: "machaojin1917939763/JavaBlog",
@@ -67,12 +67,12 @@ export default hopeTheme({
 
   plugins: {
     // You should generate and use your own comment service
-    components:{
+    // components:{
       
-    },
-    copyCode:{},
-    feed:{},
-    seo:{},
+    // },
+    // copyCode:{},
+    // feed:{},
+    // seo:{},
     comment: {
       provider: "Giscus",
       repo: "vuepress-theme-hope/giscus-discussions",

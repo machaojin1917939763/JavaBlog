@@ -15,9 +15,6 @@ devDependencies:
   '@vuepress/plugin-docsearch':
     specifier: 2.0.0-beta.66
     version: 2.0.0-beta.66(@algolia/client-search@4.19.1)(search-insights@2.7.0)
-  '@vuepress/plugin-external-link-icon':
-    specifier: 2.0.0-beta.66
-    version: 2.0.0-beta.66
   '@vuepress/plugin-google-analytics':
     specifier: 2.0.0-beta.66
     version: 2.0.0-beta.66
@@ -42,9 +39,6 @@ devDependencies:
   vuepress-plugin-feed2:
     specifier: 2.0.0-beta.234
     version: 2.0.0-beta.234(vuepress@2.0.0-beta.66)
-  vuepress-plugin-iconify:
-    specifier: ^0.4.0
-    version: 0.4.0(vuepress@2.0.0-beta.66)
   vuepress-plugin-reading-time2:
     specifier: 2.0.0-beta.234
     version: 2.0.0-beta.234(vuepress@2.0.0-beta.66)
@@ -1606,19 +1600,6 @@ packages:
     dev: true
     optional: true
 
-  /@iconify/types@2.0.0:
-    resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
-    dev: true
-
-  /@iconify/vue@4.1.1(vue@3.3.4):
-    resolution: {integrity: sha512-RL85Bm/DAe8y6rT6pux7D2FJSiUEM/TPfyK7GrbAOfTSwrhvwJW+S5yijdGcmtXouA8MtuH9C7l4hiSE4mLMjg==}
-    peerDependencies:
-      vue: '>=3'
-    dependencies:
-      '@iconify/types': 2.0.0
-      vue: 3.3.4
-    dev: true
-
   /@jridgewell/gen-mapping@0.3.3:
     resolution: {integrity: sha512-HLhSWOLRi875zjjMG/r+Nv0oCW8umGb0BgEhyX3dDX3egwZtB8PqLnjz3yedt8R5StBrzcg4aBpnh8UA9D1BoQ==}
     engines: {node: '>=6.0.0'}
@@ -2218,15 +2199,6 @@ packages:
       - supports-color
     dev: true
 
-  /@vuepress/client@2.0.0-beta.63:
-    resolution: {integrity: sha512-L/EQt3ZBKtEB6HUUifPSn/rAQM1R2ndKOqGYHzdG90WrUbzpM+ROm+3BxpVinvUuKkRgnXyf8qgaETlvUNw90Q==}
-    dependencies:
-      '@vue/devtools-api': 6.5.0
-      '@vuepress/shared': 2.0.0-beta.63
-      vue: 3.3.4
-      vue-router: 4.2.4(vue@3.3.4)
-    dev: true
-
   /@vuepress/client@2.0.0-beta.66:
     resolution: {integrity: sha512-WjrL1u0NOVUwiGoVOIfQqSU7SwzJUkyBFu3xiZoNmWFD9VdPIfuSRvVeZDhr+br/0tA7XrJd2ueSEDt5+BM3Qg==}
     dependencies:
@@ -2433,13 +2405,6 @@ packages:
     transitivePeerDependencies:
       - '@vue/composition-api'
       - supports-color
-    dev: true
-
-  /@vuepress/shared@2.0.0-beta.63:
-    resolution: {integrity: sha512-xJ90x2RAuYenM4Pn7gbhJ9lkmPBWscM0cff+ypEVI47oV0hKpaDpNLkteT4QjBoRIHyqlz5CFUP+2BMOk9zxCA==}
-    dependencies:
-      '@mdit-vue/types': 0.12.0
-      '@vue/shared': 3.3.4
     dev: true
 
   /@vuepress/shared@2.0.0-beta.66:
@@ -6004,26 +5969,6 @@ packages:
     transitivePeerDependencies:
       - '@vue/composition-api'
       - supports-color
-    dev: true
-
-  /vuepress-plugin-iconify@0.4.0(vuepress@2.0.0-beta.66):
-    resolution: {integrity: sha512-imyLKDLc0J+B0fT9ujecCIHYRcbEWBqcZpYU+IkGpXx/mojEFzjIpQ2ZdyWk6Um6aVIqalFZoavrGfAYDf7B3w==}
-    peerDependencies:
-      vuepress: 2.0.0-beta.63
-      vuepress-vite: 2.0.0-beta.63
-      vuepress-webpack: 2.0.0-beta.63
-    peerDependenciesMeta:
-      vuepress:
-        optional: true
-      vuepress-vite:
-        optional: true
-      vuepress-webpack:
-        optional: true
-    dependencies:
-      '@iconify/vue': 4.1.1(vue@3.3.4)
-      '@vuepress/client': 2.0.0-beta.63
-      vue: 3.3.4
-      vuepress: 2.0.0-beta.66(@vuepress/client@2.0.0-beta.66)(vue@3.3.4)
     dev: true
 
   /vuepress-plugin-md-enhance@2.0.0-beta.234(vuepress@2.0.0-beta.66):

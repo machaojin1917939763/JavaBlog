@@ -10,9 +10,8 @@ import { seoPlugin } from "vuepress-plugin-seo2";
 import { removeHtmlExtensionPlugin } from 'vuepress-plugin-remove-html-extension'
 import { feedPlugin } from "vuepress-plugin-feed2";
 import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
-import { externalLinkIconPlugin } from "@vuepress/plugin-external-link-icon";
 import { commentPlugin } from "vuepress-plugin-comment2";
-import { iconifyPlugin } from 'vuepress-plugin-iconify'
+
 
 
 export default defineUserConfig({
@@ -21,19 +20,35 @@ export default defineUserConfig({
   lang: "zh-CN",
   title: "JavaBlog",
   description: "",
+  
 
   theme,
+  head: [
+    // ...
+
+    // 导入相应链接
+    ["link", { rel: "preconnect", href: "https://fonts.googleapis.com" }],
+    [
+      "link",
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: "" },
+    ],
+    [
+      "link",
+      {
+        href: "https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700&display=swap",
+        rel: "stylesheet",
+      },
+    ],
+  ],
   plugins: [
-    iconifyPlugin(),
     commentPlugin({
       // 插件选项
-      repo: "machaojin1917939763/machaojin1917939763.github.io",
+      // repo: "machaojin1917939763/machaojin1917939763.github.io",
+      provider: "Giscus",
+      repo: `${"machaojin1917939763"}/${"machaojin1917939763.github.io"}`,
       repoId: "R_kgDOKFJsOg",
       category: "Announcements",
      categoryId: "DIC_kwDOKFJsOs4CYe_S",
-    }),
-    externalLinkIconPlugin({
-      // 配置项
     }),
     googleAnalyticsPlugin({
       // 配置项
