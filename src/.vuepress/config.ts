@@ -23,23 +23,6 @@ export default defineUserConfig({
   
 
   theme,
-  head: [
-    // ...
-
-    // 导入相应链接
-    ["link", { rel: "preconnect", href: "https://fonts.googleapis.com" }],
-    [
-      "link",
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: "" },
-    ],
-    [
-      "link",
-      {
-        href: "https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700&display=swap",
-        rel: "stylesheet",
-      },
-    ],
-  ],
   plugins: [
     commentPlugin({
       // 插件选项
@@ -48,7 +31,7 @@ export default defineUserConfig({
       repo: `${"machaojin1917939763"}/${"machaojin1917939763.github.io"}`,
       repoId: "R_kgDOKFJsOg",
       category: "Announcements",
-     categoryId: "DIC_kwDOKFJsOs4CYe_S",
+      categoryId: "DIC_kwDOKFJsOs4CYe_S",
     }),
     googleAnalyticsPlugin({
       // 配置项
@@ -66,6 +49,8 @@ export default defineUserConfig({
     backToTopPlugin(),
     copyCodePlugin({
       // 插件选项
+      delay:100,
+      showInMobile:true,
     }),
     componentsPlugin({
       // 插件选项
