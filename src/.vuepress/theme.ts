@@ -33,7 +33,7 @@ export default hopeTheme({
   pure: false,
 
   docsDir: "src",
-  headerDepth:2,
+  headerDepth:5,
   
 
   // navbar
