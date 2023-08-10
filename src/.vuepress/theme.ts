@@ -111,6 +111,7 @@ export default hopeTheme({
       attrs: true,
       chart: true,
       codetabs: true,
+      container:true,
       echarts: true,
       figure: true,
       flowchart: true,
