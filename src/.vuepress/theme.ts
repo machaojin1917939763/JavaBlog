@@ -30,7 +30,7 @@ export default hopeTheme({
   repo: "machaojin1917939763/JavaBlog",
 
   docsDir: "src",
-  headerDepth:3,
+  headerDepth:2,
   
 
   // navbar
@@ -40,7 +40,7 @@ export default hopeTheme({
   sidebar,
 
   footer: "",
-  // sidebar:"structure",
+
   pageInfo:[
     "Author",
     "Category",
@@ -56,7 +56,7 @@ export default hopeTheme({
 
   encrypt: {
     config: {
-      "/blog/encrypt.html": ["1234"],
+      // "/blog/encrypt.html": ["1234"],
     },
   },
 
@@ -87,7 +87,6 @@ export default hopeTheme({
       attrs: true,
       chart: true,
       codetabs: true,
-      demo: true,
       echarts: true,
       figure: true,
       flowchart: true,
@@ -120,7 +119,7 @@ export default hopeTheme({
       tabs: true,
       vPre: true,
       vuePlayground: true,
-      
+
     },
   },
 });
