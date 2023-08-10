@@ -19,5 +19,12 @@ export default sidebar({
       collapsible:true,
       children: "structure",
     },
+    {
+      text: "面试真题",
+      icon: "book",
+      prefix: "interview/",
+      collapsible:true,
+      children: "structure",
+    },
   ],
 });

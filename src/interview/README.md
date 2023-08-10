@@ -1,9 +1,9 @@
 ---
-title: Java面试指南
+title: 面试真题
 index: false
 icon: laptop-code
 category:
-  - JAVA面经
+  - 面试真题
 ---
 
 ::: info
