@@ -10,24 +10,27 @@ export default hopeTheme({
     url: "https://machaojin.cn",
     email:"ma@machaojin.cn"
   },
-  fullscreen:true,
 
-  // iconAssets: "fontawesome-with-brands",
-  // iconAssets: "fontawesome",
-  // // 你想要的 URL
-  // iconAssets: "/base/my/font-icon/resource.js",
 
-  // 上述内容的数组
-  // iconAssets: [
-  //   "/base/my/font-icon/resource.js",
-  //   "https://example/my/fonr-icon/resouce.css",
-  //   "fontawesome",
-  // ],
-  iconAssets: "fontawesome-with-brands",
+  iconAssets: "iconfont",
+
   // iconPrefix:"",
   logo: "/navicon/jeeweixin.ico",
 
   repo: "machaojin1917939763/JavaBlog",
+  repoDisplay: true,
+  // 路径导航
+  breadcrumb: true,
+  // 路径导航的图标显示
+  breadcrumbIcon: true,
+  // 暗黑模式切换-在深色模式和浅色模式中切换
+  darkmode: "toggle",
+  // 全屏按钮
+  fullscreen: true,
+  // 返回顶部按钮-下滑300px后显示
+  backToTop: true,
+  // 纯净模式-禁用
+  pure: false,
 
   docsDir: "src",
   headerDepth:2,
@@ -67,12 +70,33 @@ export default hopeTheme({
 
   plugins: {
     // You should generate and use your own comment service
-    // components:{
-      
-    // },
-    // copyCode:{},
-    // feed:{},
-    // seo:{},
+    components:{
+      components:[
+        // 为站点提供了在MD文档中自定义颜色的徽章
+      "Badge",
+      // 为站点提供了在MD文档中加载B站视频的功能，但是不建议使用
+      "BiliBili",
+      // 为站点提供了在MD文档中加载PDF阅读器的功能，但是不建议使用
+      // 原因一：PDF书籍较大，上传到码云后会大量占用码云空间
+      // 原因二：当PDF阅读器较多的时候，将MD文档渲染成HTML页面比较耗费性能，使页面加载速度变慢
+      "PDF",
+      "FontIcon",
+      "Share",
+      "ArtPlayer",
+      "AudioPlayer",
+      "CodePen",
+      "Replit",
+      "SiteInfo"
+      ]
+    },
+    copyCode: {
+      // 在移动端也可以实现复制代码
+      showInMobile: true,
+      // 代码复制成功提示消息的时间-ms
+      duration: 3000,
+    },
+    feed:{},
+    seo:{},
     comment: {
       provider: "Giscus",
       repo: "vuepress-theme-hope/giscus-discussions",
@@ -119,7 +143,6 @@ export default hopeTheme({
       tabs: true,
       vPre: true,
       vuePlayground: true,
-
     },
   },
 });
