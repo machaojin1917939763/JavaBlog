@@ -42,18 +42,12 @@ devDependencies:
   vuepress-plugin-copy-code2:
     specifier: 2.0.0-beta.234
     version: 2.0.0-beta.234(vuepress@2.0.0-beta.66)
-  vuepress-plugin-feed2:
-    specifier: 2.0.0-beta.234
-    version: 2.0.0-beta.234(vuepress@2.0.0-beta.66)
   vuepress-plugin-reading-time2:
     specifier: 2.0.0-beta.234
     version: 2.0.0-beta.234(vuepress@2.0.0-beta.66)
   vuepress-plugin-seo2:
     specifier: 2.0.0-beta.234
     version: 2.0.0-beta.234(vuepress@2.0.0-beta.66)
-  vuepress-plugin-social-share:
-    specifier: 2.0.0-beta.16
-    version: 2.0.0-beta.16(vuepress@2.0.0-beta.66)
   vuepress-theme-hope:
     specifier: 2.0.0-beta.234
     version: 2.0.0-beta.234(vuepress@2.0.0-beta.66)
@@ -2080,12 +2074,6 @@ packages:
   /@types/node@20.4.9:
     resolution: {integrity: sha512-8e2HYcg7ohnTUbHk8focoklEQYvemQmu9M/f43DZVx43kHn0tE3BY/6gSDxS7k0SprtS0NHvj+L80cGLnoOUcQ==}
 
-  /@types/qrcode@1.5.1:
-    resolution: {integrity: sha512-HpSN675K0PmxIDRpjMI3Mc2GiKo3dNu+X/F5SoItiaDS1lVfgC6Wac1c5lQDfKWbTJUSHWiHKzpJpBZG7k9gaA==}
-    dependencies:
-      '@types/node': 20.4.9
-    dev: true
-
   /@types/raphael@2.3.3:
     resolution: {integrity: sha512-Rhvq0q6wzyvipejki/9w87/pgapyE+s3gO66tdl1oD3qDrow+ek+4vVYAbRkeL58HCCK9EOZKwyjqYJ/TFkmtQ==}
     dev: true
@@ -2099,7 +2087,7 @@ packages:
   /@types/sax@1.2.4:
     resolution: {integrity: sha512-pSAff4IAxJjfAXUG6tFkO7dsSbTmf8CtUpfhhZ5VhkRpC4628tJhh3+V6H1E+/Gs9piSzYKT5yzHO5M4GG9jkw==}
     dependencies:
-      '@types/node': 17.0.45
+      '@types/node': 20.4.9
     dev: true
 
   /@types/trusted-types@2.0.3:
@@ -6383,30 +6371,6 @@ packages:
     transitivePeerDependencies:
       - '@vue/composition-api'
       - supports-color
-    dev: true
-
-  /vuepress-plugin-social-share@2.0.0-beta.16(vuepress@2.0.0-beta.66):
-    resolution: {integrity: sha512-Ql9JYGJeGpyi+TLkbVm0U2jJyaUwV5iHLgBlXa0vL3xyAA53xWw7uGoNYESbqMQx96De17f58VqbphHTDshexg==}
-    peerDependencies:
-      vuepress: 2.0.0-beta.66
-      vuepress-vite: 2.0.0-beta.66
-      vuepress-webpack: 2.0.0-beta.66
-    peerDependenciesMeta:
-      vuepress:
-        optional: true
-      vuepress-vite:
-        optional: true
-      vuepress-webpack:
-        optional: true
-    dependencies:
-      '@types/qrcode': 1.5.1
-      '@vuepress/client': 2.0.0-beta.66
-      deepmerge: 4.3.1
-      qrcode: 1.5.3
-      vue: 3.3.4
-      vuepress: 2.0.0-beta.66(@vuepress/client@2.0.0-beta.66)(vue@3.3.4)
-    transitivePeerDependencies:
-      - '@vue/composition-api'
     dev: true
 
   /vuepress-shared@2.0.0-beta.234(vuepress@2.0.0-beta.66):

@@ -23,10 +23,8 @@
     "vuepress-plugin-comment2": "2.0.0-beta.234",
     "vuepress-plugin-components": "2.0.0-beta.234",
     "vuepress-plugin-copy-code2": "2.0.0-beta.234",
-    "vuepress-plugin-feed2": "2.0.0-beta.234",
     "vuepress-plugin-reading-time2": "2.0.0-beta.234",
     "vuepress-plugin-seo2": "2.0.0-beta.234",
-    "vuepress-plugin-social-share": "2.0.0-beta.16",
     "vuepress-theme-hope": "2.0.0-beta.234"
   },
   "dependencies": {

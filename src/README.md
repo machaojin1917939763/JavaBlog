@@ -14,24 +14,38 @@ actions:
   - text: 个人博客
     link: http://120.48.18.228:8090/
 features:
-  - title: Markdown 增强
+  - title: 抖音
     icon: /othericon/douyin.svg
-    details: 新增文字对齐、上下角标、脚注、标记、任务列表、数学公式、流程图、图表与幻灯片支持
-    link: /zh/guide/markdown/
+    link: https://www.douyin.com/
 
-  - title: 自定义容器支持
+  - title: Gitee
     icon: /othericon/gitee.svg
-    details: 用样式装饰 Markdown 内容
-    link: ./guide/markdown/container.html
+    link: https://www.gitee.com/
 
-  - title: 选项卡
+  - title: 哔哩哔哩
     icon: /othericon/bilibili.svg
-    details: 使用选项卡对相似内容进行分组
-    link: ./guide/markdown/tabs.html
+    link: https://www.bilibili.com/
 
-  - title: 代码组
+  - title: LeetCode
     icon: /othericon/leetcode.svg
-    details: 使用选项卡对相似代码进行分组
-    link: ./guide/markdown/code-tabs.html
+    link: https://leetcode.cn/
 ---
 
+::: vue-playground Vue 交互演示
+
+@file App.vue
+
+```vue
+<script setup>
+import { ref } from "vue";
+
+const msg = ref("OK,YOU PASSED!");
+</script>
+
+<template>
+  <h1>{{ msg }}</h1>
+  <input v-model="msg" />
+</template>
+```
+
+:::

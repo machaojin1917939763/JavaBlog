@@ -8,7 +8,7 @@ import { copyCodePlugin } from "vuepress-plugin-copy-code2";
 import { backToTopPlugin } from '@vuepress/plugin-back-to-top'
 import { seoPlugin } from "vuepress-plugin-seo2";
 import { removeHtmlExtensionPlugin } from 'vuepress-plugin-remove-html-extension'
-import { feedPlugin } from "vuepress-plugin-feed2";
+
 import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
 import { commentPlugin } from "vuepress-plugin-comment2";
 
@@ -36,10 +36,6 @@ export default defineUserConfig({
     googleAnalyticsPlugin({
       // 配置项
       id:""
-    }),
-    feedPlugin({
-      // 插件选项
-      hostname:"https://machaojin.cn"
     }),
     seoPlugin({
       // 你的选项
