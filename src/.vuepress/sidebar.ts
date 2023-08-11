@@ -20,6 +20,13 @@ export default sidebar({
       children: "structure",
     },
     {
+      text: "力扣代码",
+      icon: "book",
+      prefix: "code/",
+      collapsible:true,
+      children: "structure",
+    },
+    {
       text: "技术文档",
       icon: "book",
       prefix: "guide/",
