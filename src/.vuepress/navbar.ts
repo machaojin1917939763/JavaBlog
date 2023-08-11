@@ -22,6 +22,18 @@ export default navbar([
       },
     ],
   },
+  {
+    text: "个人博客",
+    icon: "lightbulb",
+    link:"http://120.48.18.228:8090/",
+    children: [],
+  },
+  {
+    text: "ChatGPT",
+    icon: "lightbulb",
+    link:"http://120.48.18.228:3000/",
+    children: [],
+  },
   // {
   //   text: "V2 文档",
   //   icon: "book",
