@@ -4,35 +4,33 @@ export default navbar([
   "/",
   "/blog/",
   {
-    text: "技术文档",
-    icon: "lightbulb",
-    prefix: "/guide/",
-    children: [
-      {
-        text: "PDF",
-        icon: "lightbulb",
-        prefix: "bar/",
-        children: [],
-      },
-      {
-        text: "Foo",
-        icon: "lightbulb",
-        prefix: "foo/",
-        children: [],
-      },
-    ],
-  },
-  {
     text: "个人博客",
     icon: "lightbulb",
     link:"http://120.48.18.228:8090/",
-    children: [],
   },
   {
     text: "ChatGPT",
     icon: "lightbulb",
     link:"http://120.48.18.228:3000/",
-    children: [],
+  },
+  {
+    text: "技术文档",
+    icon: "lightbulb",
+    prefix: "/guide/",
+    children: [
+      {
+        text: "待更新",
+        icon: "lightbulb",
+        prefix: "bar/",
+        children: [],
+      },
+      {
+        text: "待更新",
+        icon: "lightbulb",
+        prefix: "foo/",
+        children: [],
+      },
+    ],
   },
   // {
   //   text: "V2 文档",
