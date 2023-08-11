@@ -15,6 +15,9 @@ actions:
 
   - text: 技术文档
     link: ./guide/
+
+  - text: ChatGPT
+    link: http://120.48.18.228:3000/
  
 features:
   - title: 抖音
