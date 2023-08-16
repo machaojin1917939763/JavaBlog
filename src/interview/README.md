@@ -1,9 +1,46 @@
 ---
-title: 面试真题
-index: false
-icon: laptop-code
-category:
-  - 面试真题
+​---
+home: true
+heroImage: /navicon/java.ico
+heroText: Java 面试宝典
+tagline: 面试真题、高效学习、代码实践，一站式 Java 学习解决方案
+actionText: 深入探索 →
+actionLink: /blog/
+features:
+- title: 实时更新
+  details: 面试题库实时更新，紧跟行业趋势。
+- title: 真题分享
+  details: 来自一线大厂的面试真题，助你轻松备战。
+- title: 代码实践
+  details: 不仅仅是理论，更有实际代码示例帮助你理解与应用。
+footer: © 2023 by Mr Chaojin. 保留所有权利.
+​---
+
+# 🚀 欢迎来到 Java 面试宝典！
+
+我们致力于为 Java 开发者提供一流的面试资源，无论你是初学者还是经验丰富的开发者，这里都有你需要的。
+
+::: tip 🌟 特色
+- **真题分享**：直击面试痛点，为你揭秘大厂面试真题。
+- **详细解析**：专业分析，深入浅出，让你理解每一个知识点。
+- **代码实践**：结合真实代码，学习如何在实际项目中应用知识。
+:::
+
+## 📚 面试题目精选
+
+- Java 基础
+- JVM 内部机制
+- Spring 框架深入
+- 数据结构与算法
+- 设计模式
+
+[🔍 查看全部题目](/blog/)
+
+## 💡 分享你的面试经验
+
+与大家分享你的面试经验，一起成长，一起进步！
+
+[📝 我要分享](/share-experience/)
 ---
 
 ::: info
