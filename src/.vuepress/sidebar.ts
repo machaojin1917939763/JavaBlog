@@ -7,7 +7,6 @@ export default sidebar({
       text: "Java面经",
       icon: "laptop-code",
       prefix: "blog/",
-      link: "blog/",
       collapsible:true,
       children: "structure",
     },
