@@ -11,39 +11,14 @@ export default hopeTheme({
     email:"ma@machaojin.cn"
   },
 
+  iconAssets: "fontawesome-with-brands",
 
-  iconAssets: "iconfont",
-
-  // iconPrefix:"",
   logo: "/navicon/jeeweixin.ico",
 
   repo: "machaojin1917939763/JavaBlog",
-  repoDisplay: true,
-  // 路径导航
-  breadcrumb: true,
-  // 路径导航的图标显示
-  breadcrumbIcon: true,
-  // 暗黑模式切换-在深色模式和浅色模式中切换
-  darkmode: "toggle",
-  // 全屏按钮
-  fullscreen: true,
-  // 返回顶部按钮-下滑300px后显示
-  backToTop: true,
-  // 纯净模式-禁用
-  pure: false,
 
   docsDir: "src",
-  headerDepth:5,
   
-
-  // navbar
-  navbar,
-
-  // sidebar
-  sidebar,
-
-  footer: "",
-
   pageInfo:[
     "Author",
     "Category",
@@ -55,11 +30,19 @@ export default hopeTheme({
     "Tag"
   ],
 
+  // navbar
+  navbar,
+
+  // sidebar
+  sidebar,
+
+  footer: "默认页脚",
+
   displayFooter: true,
 
   encrypt: {
     config: {
-      // "/blog/encrypt.html": ["1234"],
+      "/demo/encrypt.html": ["1234"],
     },
   },
 
@@ -70,33 +53,6 @@ export default hopeTheme({
 
   plugins: {
     // You should generate and use your own comment service
-    components:{
-      components:[
-        // 为站点提供了在MD文档中自定义颜色的徽章
-      "Badge",
-      // 为站点提供了在MD文档中加载B站视频的功能，但是不建议使用
-      "BiliBili",
-      // 为站点提供了在MD文档中加载PDF阅读器的功能，但是不建议使用
-      // 原因一：PDF书籍较大，上传到码云后会大量占用码云空间
-      // 原因二：当PDF阅读器较多的时候，将MD文档渲染成HTML页面比较耗费性能，使页面加载速度变慢
-      "PDF",
-      "FontIcon",
-      "Share",
-      "ArtPlayer",
-      "AudioPlayer",
-      "CodePen",
-      "Replit",
-      "SiteInfo"
-      ]
-    },
-    copyCode: {
-      // 在移动端也可以实现复制代码
-      showInMobile: true,
-      // 代码复制成功提示消息的时间-ms
-      duration: 3000,
-    },
-    feed:{},
-    seo:{},
     comment: {
       provider: "Giscus",
       repo: "vuepress-theme-hope/giscus-discussions",
@@ -111,7 +67,7 @@ export default hopeTheme({
       attrs: true,
       chart: true,
       codetabs: true,
-      container:true,
+      demo: true,
       echarts: true,
       figure: true,
       flowchart: true,
@@ -145,5 +101,62 @@ export default hopeTheme({
       vPre: true,
       vuePlayground: true,
     },
+
+    // uncomment these if you want a pwa
+    // pwa: {
+    //   favicon: "/favicon.ico",
+    //   cacheHTML: true,
+    //   cachePic: true,
+    //   appendBase: true,
+    //   apple: {
+    //     icon: "/assets/icon/apple-icon-152.png",
+    //     statusBarColor: "black",
+    //   },
+    //   msTile: {
+    //     image: "/assets/icon/ms-icon-144.png",
+    //     color: "#ffffff",
+    //   },
+    //   manifest: {
+    //     icons: [
+    //       {
+    //         src: "/assets/icon/chrome-mask-512.png",
+    //         sizes: "512x512",
+    //         purpose: "maskable",
+    //         type: "image/png",
+    //       },
+    //       {
+    //         src: "/assets/icon/chrome-mask-192.png",
+    //         sizes: "192x192",
+    //         purpose: "maskable",
+    //         type: "image/png",
+    //       },
+    //       {
+    //         src: "/assets/icon/chrome-512.png",
+    //         sizes: "512x512",
+    //         type: "image/png",
+    //       },
+    //       {
+    //         src: "/assets/icon/chrome-192.png",
+    //         sizes: "192x192",
+    //         type: "image/png",
+    //       },
+    //     ],
+    //     shortcuts: [
+    //       {
+    //         name: "Demo",
+    //         short_name: "Demo",
+    //         url: "/demo/",
+    //         icons: [
+    //           {
+    //             src: "/assets/icon/guide-maskable.png",
+    //             sizes: "192x192",
+    //             purpose: "maskable",
+    //             type: "image/png",
+    //           },
+    //         ],
+    //       },
+    //     ],
+    //   },
+    // },
   },
 });

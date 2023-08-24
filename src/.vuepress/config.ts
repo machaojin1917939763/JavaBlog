@@ -1,18 +1,5 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
-import { autoCatalogPlugin } from "vuepress-plugin-auto-catalog";
-import { readingTimePlugin } from "vuepress-plugin-reading-time2";
-import { docsearchPlugin } from '@vuepress/plugin-docsearch'
-import { componentsPlugin } from "vuepress-plugin-components";
-import { copyCodePlugin } from "vuepress-plugin-copy-code2";
-import { backToTopPlugin } from '@vuepress/plugin-back-to-top'
-import { seoPlugin } from "vuepress-plugin-seo2";
-import { removeHtmlExtensionPlugin } from 'vuepress-plugin-remove-html-extension'
-
-import { googleAnalyticsPlugin } from '@vuepress/plugin-google-analytics'
-import { commentPlugin } from "vuepress-plugin-comment2";
-
-
 
 export default defineUserConfig({
   base: "/",
@@ -20,59 +7,10 @@ export default defineUserConfig({
   lang: "zh-CN",
   title: "JavaBlog",
   description: "",
-  
+
+
 
   theme,
-  plugins: [
-    commentPlugin({
-      // 插件选项
-      // repo: "machaojin1917939763/machaojin1917939763.github.io",
-      provider: "Giscus",
-      repo: `${"machaojin1917939763"}/${"machaojin1917939763.github.io"}`,
-      repoId: "R_kgDOKFJsOg",
-      category: "Announcements",
-      categoryId: "DIC_kwDOKFJsOs4CYe_S",
-    }),
-    googleAnalyticsPlugin({
-      // 配置项
-      id:""
-    }),
-    seoPlugin({
-      // 你的选项
-    hostname:"https://machaojin.cn"
-    }),
-    removeHtmlExtensionPlugin(),
-    backToTopPlugin(),
-    copyCodePlugin({
-      // 插件选项
-      delay:100,
-      showInMobile:true,
-    }),
-    componentsPlugin({
-      // 插件选项
-    }),
-    docsearchPlugin({
-      appId: '<APP_ID>',
-      apiKey: '<API_KEY>',
-      indexName: '<INDEX_NAME>',
-      locales: {
-        '/': {
-          placeholder: '搜索文档',
-          translations: {
-            button: {
-              buttonText: '搜索文档',
-            },
-          },
-        },
-      },
-    }),
-    readingTimePlugin({
-      // 你的选项
-    }),
-    autoCatalogPlugin({
-      //插件选项
-    }),
-  ],
 
   // Enable it with pwa
   // shouldPrefetch: false,

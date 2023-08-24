@@ -327,18 +327,30 @@ docker run -d -p 8181:8080 -e "JAVA_OPTS=-Drocketmq.namesrv.addr=rmqnamesrv:9876
 ```
 
 ```shell
-docker run -d -p 9876:9876 --name rmqnamesrv rocketmqinc/rocketmq /opt/rocketmq-4.4.0/bin/mqnamesrv
-docker run -d -p 8181:8080 -e "JAVA_OPTS=-Drocketmq.namesrv.addr=rmqnamesrv:9876 -Dcom.rocketmq.sendMessageWithVIPChannel=false" --name rmqconsole styletang/rocketmq-console-ng
-docker run -d -p 10909:10909 -p 10911:10911 -v D:/MyEnvironment/rocketmq/rocaketmq/conf/2m-2s-async:/opt/rocketmq-4.4.0/conf/2m-2s-async --name rmqmaster --link rmqnamesrv:namesrv rocketmqinc/rocketmq sh mqbroker -n namesrv:9876 -c /opt/rocketmq-4.4.0/conf/2m-2s-async/broker-a-master.properties
-docker run -d -p 11909:11909 -p 11911:11911 -v D:/MyEnvironment/rocketmq/rocaketmq/conf/2m-2s-async:/opt/rocketmq-4.4.0/conf/2m-2s-async --name rmqslave1 --link rmqnamesrv:namesrv rocketmqinc/rocketmq sh mqbroker -n namesrv:9876 -c /opt/rocketmq-4.4.0/conf/2m-2s-async/broker-a-slave1.properties
-docker run -d -p 12909:12909 -p 12911:12911 -v D:/MyEnvironment/rocketmq/rocaketmq/conf/2m-2s-async:/opt/rocketmq-4.4.0/conf/2m-2s-async --name rmqslave2 --link rmqnamesrv:namesrv rocketmqinc/rocketmq sh mqbroker -n namesrv:9876 -c /opt/rocketmq-4.4.0/conf/2m-2s-async/broker-a-slave2.properties
+docker run -d --restart=always -p 9876:9876  --name rmqnamesrv rocketmqinc/rocketmq /opt/rocketmq-4.4.0/bin/mqnamesrv
+
+docker run -d --restart=always -p 8181:8080 -e "JAVA_OPTS=-Drocketmq.namesrv.addr=rmqnamesrv:9876 -Dcom.rocketmq.sendMessageWithVIPChannel=false" --name rmqconsole styletang/rocketmq-console-ng
+
+docker run -d --restart=always -p 10909:10909 -p 10911:10911  -v D:/MyEnvironment/rocketmq/rocaketmq/conf/2m-2s-async:/opt/rocketmq-4.4.0/conf/2m-2s-async --name rmqmaster1 --link rmqnamesrv:namesrv rocketmqinc/rocketmq sh mqbroker -n namesrv:9876 -c /opt/rocketmq-4.4.0/conf/2m-2s-async/broker-a-master.properties
+
+docker run -d --restart=always -p 13909:13909 -p 13911:13911  -v D:/MyEnvironment/rocketmq/rocaketmq/conf/2m-2s-async:/opt/rocketmq-4.4.0/conf/2m-2s-async --name rmqmaster2 --link rmqnamesrv:namesrv rocketmqinc/rocketmq sh mqbroker -n namesrv:9876 -c /opt/rocketmq-4.4.0/conf/2m-2s-async/broker-a-s.properties
+
+docker run -d --restart=always -p 11909:11909 -p 11911:11911  -v D:/MyEnvironment/rocketmq/rocaketmq/conf/2m-2s-async:/opt/rocketmq-4.4.0/conf/2m-2s-async --name  rmqslave1 --link rmqnamesrv:namesrv rocketmqinc/rocketmq sh mqbroker -n namesrv:9876 -c /opt/rocketmq-4.4.0/conf/2m-2s-async/broker-b.properties
+
+docker run -d --restart=always -p 12909:12909 -p 12911:12911  -v D:/MyEnvironment/rocketmq/rocaketmq/conf/2m-2s-async:/opt/rocketmq-4.4.0/conf/2m-2s-async --name  rmqslave2 --link rmqnamesrv:namesrv rocketmqinc/rocketmq sh mqbroker -n namesrv:9876 -c /opt/rocketmq-4.4.0/conf/2m-2s-async/broker-b-s.properties
+
 docker network connect rmqnetwork rmqslave1
 docker network connect rmqnetwork rmqslave2
-docker network connect rmqnetwork rmqmaster
+docker network connect rmqnetwork rmqmaster1
+docker network connect rmqnetwork rmqmaster2
 docker network connect rmqnetwork rmqconsole
 docker network connect rmqnetwork rmqnamesrv
-docker stop rmqconsole   rmqslave2 rmqslave1  rmqmaster  rmqnamesrv
-docker restart rmqconsole rmqnamesrv rmqmaster rmqslave1 rmqslave2  
+
+docker stop rmqconsole rmqnamesrv rmqmaster1 rmqmaster2 rmqmaster1 rmqslave1 rmqslave2 
+
+docker rm rmqconsole rmqnamesrv rmqmaster1 rmqmaster2 rmqmaster1 rmqslave1 rmqslave2 
+
+docker restart rmqconsole rmqnamesrv rmqmaster1 rmqmaster2 rmqmaster1 rmqslave1 rmqslave2  
 ```
 
 ```
