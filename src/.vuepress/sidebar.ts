@@ -26,7 +26,7 @@ export default sidebar({
     },
     {
       text: "技术文档",
-      icon: "workingDirectory",
+      icon: "activity",
       prefix: "guide/",
       collapsible:true,
       children: "structure",

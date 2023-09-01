@@ -5,29 +5,29 @@ export default navbar([
   "/blog/",
   {
     text: "个人博客",
-    icon: "lightbulb",
+    icon: "people",
     link:"http://120.48.18.228:8090/",
   },
   {
     text: "ChatGPT",
-    icon: "lightbulb",
+    icon: "engine",
     link:"http://120.48.18.228:3000/",
   },
   {
     text: "技术文档",
-    icon: "lightbulb",
+    icon: "launch",
     prefix: "/guide/",
     children: [
       {
-        text: "待更新",
-        icon: "lightbulb",
-        prefix: "bar/",
+        text: "安装文档",
+        icon: "loop",
+        prefix: "install/",
         children: [],
       },
       {
-        text: "待更新",
-        icon: "lightbulb",
-        prefix: "foo/",
+        text: "技术博客",
+        icon: "result",
+        prefix: "book/",
         children: [],
       },
     ],
