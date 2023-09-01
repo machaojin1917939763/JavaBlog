@@ -19,14 +19,14 @@ export default sidebar({
     },
     {
       text: "力扣代码",
-      icon: "book",
+      icon: "keyboard",
       prefix: "code/",
       collapsible:true,
       children: "structure",
     },
     {
       text: "技术文档",
-      icon: "book",
+      icon: "workingDirectory",
       prefix: "guide/",
       collapsible:true,
       children: "structure",
