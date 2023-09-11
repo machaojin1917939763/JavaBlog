@@ -42,7 +42,7 @@ export default hopeTheme({
 
   encrypt: {
     config: {
-      "/demo/encrypt.html": ["1234"],
+      "/blog/项目/12306/": ["machaojin"],
     },
   },
 
