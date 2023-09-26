@@ -31,5 +31,12 @@ export default sidebar({
       collapsible:true,
       children: "structure",
     },
+    {
+      text: "第三方资料",
+      icon: "book",
+      prefix: "thirty/",
+      collapsible:true,
+      children: "structure",
+    },
   ],
 });
