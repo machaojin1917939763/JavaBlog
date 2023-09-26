@@ -23,8 +23,6 @@ rpm --import https://repo.mysql.com/RPM-GPG-KEY-mysql-2022
 
 rpm -Uvh http://repo.mysql.com//mysql57-community-release-el7-7.noarch.rpm
 
-![1682645277825](../../Typora/photo/1682645277825.png)
-
 由于MySQL并不在CentOS的官方仓库中，所以我们通过上述rpm命令：
 	导入MySQL仓库的密钥
 
@@ -36,8 +34,6 @@ rpm -Uvh http://repo.mysql.com//mysql57-community-release-el7-7.noarch.rpm
 
 yum -y install mysql-community-server
 
-![1682645380163](../../Typora/photo/1682645380163.png)
-
 #### 启动MySQL并配置开机自启动
 
 systemctl start mysqld      启动
@@ -48,8 +44,6 @@ systemctl enable mysqld     开机自启
 #### 检查MySQL的运行状态
 
 systemctl status mysqld
-
-![1682645745961](../../Typora/photo/1682645745961.png)
 
 ### 配置
 
@@ -86,8 +80,6 @@ systemctl status mysqld
    # 在MySQL控制台内执行
    ALTER USER 'root'@'localhost' IDENTIFIED BY '密码';	-- sql语句中单引号和双引号都行，密码需要符合：大于8位，有大写字母，有特殊符号，不能是连续的简单语句如123，abc,
    ```
-
-   ![1682646652569](../../Typora/photo/1682646652569.png)
 
 4. [扩展]，配置root的简单密码
 
