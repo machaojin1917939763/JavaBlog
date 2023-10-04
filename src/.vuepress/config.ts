@@ -19,9 +19,6 @@ export default defineUserConfig({
     fullTextSearchPlugin({
       locales: {
         '/': {
-          placeholder: 'Search',
-        },
-        '/zh/': {
           placeholder: '搜索',
         },
       },
