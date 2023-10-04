@@ -2,6 +2,7 @@ import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 // import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 // import { externalLinkIconPlugin } from '@vuepress/plugin-external-link-icon'
+import fullTextSearchPlugin from "vuepress-plugin-full-text-search2";
 
 
 export default defineUserConfig({
@@ -15,6 +16,16 @@ export default defineUserConfig({
 
   theme,
   plugins: [
+    fullTextSearchPlugin({
+      locales: {
+        '/': {
+          placeholder: 'Search',
+        },
+        '/zh/': {
+          placeholder: '搜索',
+        },
+      },
+    }),
     // externalLinkIconPlugin({
     //   // 配置项
     // }),

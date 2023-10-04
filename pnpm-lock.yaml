@@ -13,6 +13,9 @@ devDependencies:
   vuepress:
     specifier: 2.0.0-beta.66
     version: 2.0.0-beta.66(@vuepress/client@2.0.0-beta.66)(vue@3.3.4)
+  vuepress-plugin-full-text-search2:
+    specifier: ^0.4.0
+    version: 0.4.0
   vuepress-theme-hope:
     specifier: 2.0.0-beta.234
     version: 2.0.0-beta.234(vuepress@2.0.0-beta.66)
@@ -6250,6 +6253,20 @@ packages:
       vuepress: 2.0.0-beta.66(@vuepress/client@2.0.0-beta.66)(vue@3.3.4)
       vuepress-shared: 2.0.0-beta.234(vuepress@2.0.0-beta.66)
       xml-js: 1.6.11
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - supports-color
+    dev: true
+
+  /vuepress-plugin-full-text-search2@0.4.0:
+    resolution: {integrity: sha512-/MrCn32tkoGrjguLRBa4+nJfQAFXSPZVx4t6eRsIytlDLQkZogHLr61pyAKkIyIE1J9mUWPWprJzvRwqpQKWpQ==}
+    dependencies:
+      '@vuepress/client': 2.0.0-beta.66
+      '@vuepress/core': 2.0.0-beta.67
+      '@vuepress/utils': 2.0.0-beta.67
+      chokidar: 3.5.3
+      htmlparser2: 8.0.2
+      vue: 3.3.4
     transitivePeerDependencies:
       - '@vue/composition-api'
       - supports-color
