@@ -16,7 +16,6 @@
     "@vuepress/plugin-external-link-icon": "2.0.0-beta.67",
     "vue": "^3.2.47",
     "vuepress": "2.0.0-beta.66",
-    "vuepress-plugin-reading-time2": "2.0.0-beta.237",
     "vuepress-theme-hope": "2.0.0-beta.234"
   }
 }

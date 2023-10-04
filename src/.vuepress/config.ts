@@ -2,7 +2,6 @@ import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 import { externalLinkIconPlugin } from '@vuepress/plugin-external-link-icon'
-import { readingTimePlugin } from "vuepress-plugin-reading-time2";
 
 
 export default defineUserConfig({
@@ -16,9 +15,6 @@ export default defineUserConfig({
 
   theme,
   plugins: [
-    readingTimePlugin({
-      // 你的选项
-    }),
     externalLinkIconPlugin({
       // 配置项
     }),
