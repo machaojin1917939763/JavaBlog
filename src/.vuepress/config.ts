@@ -22,21 +22,21 @@ export default defineUserConfig({
     externalLinkIconPlugin({
       // 配置项
     }),
-    // docsearchPlugin({
-    //   appId: '<APP_ID>',
-    //   apiKey: '<API_KEY>',
-    //   indexName: '<INDEX_NAME>',
-    //   locales: {
-    //     '/': {
-    //       placeholder: '搜索文档',
-    //       translations: {
-    //         button: {
-    //           buttonText: '搜索文档',
-    //         },
-    //       },
-    //     },
-    //   },
-    // }),
+    docsearchPlugin({
+      appId: '<APP_ID>',
+      apiKey: '<API_KEY>',
+      indexName: '<INDEX_NAME>',
+      locales: {
+        '/': {
+          placeholder: '搜索文档',
+          translations: {
+            button: {
+              buttonText: '搜索文档',
+            },
+          },
+        },
+      },
+    }),
   ],
 
   // Enable it with pwa
