@@ -1,7 +1,7 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 // import { docsearchPlugin } from '@vuepress/plugin-docsearch'
-import { externalLinkIconPlugin } from '@vuepress/plugin-external-link-icon'
+// import { externalLinkIconPlugin } from '@vuepress/plugin-external-link-icon'
 
 
 export default defineUserConfig({
@@ -15,9 +15,9 @@ export default defineUserConfig({
 
   theme,
   plugins: [
-    externalLinkIconPlugin({
-      // 配置项
-    }),
+    // externalLinkIconPlugin({
+    //   // 配置项
+    // }),
     // docsearchPlugin({
     //   appId: '<APP_ID>',
     //   apiKey: '<API_KEY>',
