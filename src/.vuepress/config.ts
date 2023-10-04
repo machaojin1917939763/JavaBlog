@@ -1,6 +1,9 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
-import { searchProPlugin } from "vuepress-plugin-search-pro";
+import { docsearchPlugin } from '@vuepress/plugin-docsearch'
+import { externalLinkIconPlugin } from '@vuepress/plugin-external-link-icon'
+import { readingTimePlugin } from "vuepress-plugin-reading-time2";
+
 
 export default defineUserConfig({
   base: "/",
@@ -8,22 +11,32 @@ export default defineUserConfig({
   lang: "zh-CN",
   title: "JavaBlog",
   description: "",
- // 我们假定你在使用如下多语言
- locales: {
-  "/": {
-    lang: "en-US",
-  },
-  "/zh/": {
-    lang: "zh-CN",
-  },
-},
+
 
 
   theme,
   plugins: [
-    searchProPlugin({
-    
+    readingTimePlugin({
+      // 你的选项
     }),
+    externalLinkIconPlugin({
+      // 配置项
+    }),
+    // docsearchPlugin({
+    //   appId: '<APP_ID>',
+    //   apiKey: '<API_KEY>',
+    //   indexName: '<INDEX_NAME>',
+    //   locales: {
+    //     '/': {
+    //       placeholder: '搜索文档',
+    //       translations: {
+    //         button: {
+    //           buttonText: '搜索文档',
+    //         },
+    //       },
+    //     },
+    //   },
+    // }),
   ],
 
   // Enable it with pwa
