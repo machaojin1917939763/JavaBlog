@@ -7,9 +7,6 @@ devDependencies:
   '@vuepress/plugin-docsearch':
     specifier: 2.0.0-beta.67
     version: 2.0.0-beta.67(@algolia/client-search@4.20.0)(search-insights@2.8.3)
-  '@vuepress/plugin-external-link-icon':
-    specifier: 2.0.0-beta.67
-    version: 2.0.0-beta.67
   vue:
     specifier: ^3.2.47
     version: 3.3.4
@@ -2438,20 +2435,6 @@ packages:
       '@vuepress/markdown': 2.0.0-beta.66
       '@vuepress/shared': 2.0.0-beta.66
       '@vuepress/utils': 2.0.0-beta.66
-      vue: 3.3.4
-    transitivePeerDependencies:
-      - '@vue/composition-api'
-      - supports-color
-    dev: true
-
-  /@vuepress/plugin-external-link-icon@2.0.0-beta.67:
-    resolution: {integrity: sha512-JD0/Uvt1WQXiGoAA0pjpqQ7OINDUm1TSgWeIpfPq9tZJNfgjmqUoartMFUuqcvl4eMi4Alfx0dWkzSF9qHL7Pg==}
-    dependencies:
-      '@vuepress/client': 2.0.0-beta.67
-      '@vuepress/core': 2.0.0-beta.67
-      '@vuepress/markdown': 2.0.0-beta.67
-      '@vuepress/shared': 2.0.0-beta.67
-      '@vuepress/utils': 2.0.0-beta.67
       vue: 3.3.4
     transitivePeerDependencies:
       - '@vue/composition-api'
