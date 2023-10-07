@@ -3,7 +3,7 @@ import theme from "./theme.js";
 // import { docsearchPlugin } from '@vuepress/plugin-docsearch'
 // import { externalLinkIconPlugin } from '@vuepress/plugin-external-link-icon'
 import fullTextSearchPlugin from "vuepress-plugin-full-text-search2";
-
+import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
 
 export default defineUserConfig({
   base: "/",
@@ -16,6 +16,10 @@ export default defineUserConfig({
 
   theme,
   plugins: [
+    mdEnhancePlugin({
+      // 开启卡片支持
+      card: true,
+    }),
     fullTextSearchPlugin({
       locales: {
         '/': {
