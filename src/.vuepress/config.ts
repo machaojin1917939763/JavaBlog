@@ -19,6 +19,10 @@ export default defineUserConfig({
     mdEnhancePlugin({
       // 开启卡片支持
       card: true,
+      // // 启用 vue 交互演示
+      vuePlayground: true,
+      // 启用流程图
+      flowchart: true,
     }),
     fullTextSearchPlugin({
       locales: {
