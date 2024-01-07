@@ -4,6 +4,7 @@ import sidebar from "./sidebar.js";
 
 export default hopeTheme({
   hostname: "https://machaojin.cn",
+  
 
   author: {
     name: "Mr.Chaojin",

@@ -17,7 +17,7 @@ actions:
     link: ./guide/
 
   - text: ChatGPT
-    link: http://120.48.18.228:3000/
+    link: http://120.48.18.228:8888/chat/share?shareId=u5keipyegqs6aspkmwfcntlu
  
 features:
   - title: 抖音
@@ -45,7 +45,7 @@ features:
 <template>
   <div id="app">
     <div class="box" v-bind:style="{ background: gradient }">
-      <div class="text">给我个offer吧，球球了!</div>
+      <div class="text">欢迎！</div>
     </div>
   </div>
 </template>
