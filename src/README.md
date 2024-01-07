@@ -8,13 +8,14 @@ tagline: ✨每星期更新一次站点，记录秋招的点点滴滴，更多�
 actions:
   - text: 个人博客
     link: http://120.48.18.228:8090/
-    type: primary
+    
 
   - text: 面试指南
     link: ./blog/
 
   - text: 技术文档
-    link: ./guide/
+    link: ./guide/ 
+    type: primary
 
   - text: ChatGPT
     link: http://120.48.18.228:8888/chat/share?shareId=u5keipyegqs6aspkmwfcntlu
